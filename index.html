@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Measure</h1>
+        <div class="inputs">
+            <form id="calorieForm" class="form-layout">
+
+                <div class="form-group">
+                    <input type="number" placeholder="Enter Age" id="age">
+                </div>
+
+                <div class="sex-user">
+                    <input type="radio" name="sex" id="male" value="Male">
+                    <label for="male" >Male</label>
+                    <input type="radio" name="sex" id="female" value="Female">
+                    <label for="female" >Female</label>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="currentWeight">Enter Current Weight</label>
+                    <input type="number" id="currentWeight" placeholder="kg">
+                </div>
+
+                <div class="form-group">
+                    <label for="currentHeight">Enter Height</label>
+                    <input type="number" id="currentHeight" placeholder="cm">
+                </div>
+
+                <div class="form-group">
+                    <label for="goalWeight">Enter Goal Weight</label>
+                    <input type="number" id="goalWeight" placeholder="kg">
+                </div>
+
+                <h2>Select your Activity Level</h2>
+                <div class="activity-level">
+                    <div>
+                        <input type="radio" name="activityLevel" id="sedentary" value="Sedentary">
+                        <label for="sedentary">Sedentary</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="activityLevel" id="lightly" value="Lightly Active">
+                        <label for="lightly">Lightly Active</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="activityLevel" id="moderately" value="Moderately Active">
+                        <label for="moderately">Moderately Active</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="activityLevel" id="very" value="Very Active">
+                        <label for="very">Very Active</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="activityLevel" id="extra" value="Extra Active">
+                        <label for="extra">Extra Active</label>
+                    </div>
+                </div>
+
+                <div class="selectDiet">
+                    <h2>Select your goal body</h2>
+                    <button id="btn" type="button">Submit</button>
+                </div>
+            </form>
+
+            <h1 id="result"></h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

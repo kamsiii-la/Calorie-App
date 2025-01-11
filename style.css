@@ -1,0 +1,148 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.container{
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:32px;
+}
+
+label {
+  font-size: 1.6rem;
+  flex:1;
+  display: block;
+}
+
+input {
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px; 
+  padding: 10px 15px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button{
+  padding: 15px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+#btn{
+  width: 120px;
+}
+
+.activity-level {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.activity-level input{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.activity-level div {
+    display: block;
+    align-items: center;
+}
+
+.activity-level label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 5px; 
+}
+
+.sex-user input{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+
+.sex-user{
+  display: flex;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .activity-level, .sex-user {
+    gap: 5px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    width: 100%; /* Full width on small devices */
+    max-width: none; /* Remove any max-width constraint */
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+}
